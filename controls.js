@@ -35,7 +35,7 @@
     };
 
     Controls.prototype.isLive = function() {
-        return null === location.pathname.match(new RegExp('/.*?/v/.*', 'iu'));
+        return null === location.pathname.match(new RegExp('/videos/*', 'iu'));
     };
 
     Controls.prototype.jumpBack = function() {
@@ -81,9 +81,9 @@
     Controls.prototype.theatreModeButton = function() {
         return document.querySelector('.player-button.player-button--theatre.js-control-theatre');
     };
-    
+
     Controls.prototype.volumeButton = function() {
-        return document.querySelector('.player-button.player-button--volume.js-control-volume');
+      return document.querySelector('.player-button--volume')
     };
 
     new Controls();

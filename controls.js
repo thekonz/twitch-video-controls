@@ -71,15 +71,15 @@
     };
 
     Controls.prototype.playButton = function() {
-        return document.querySelector('.player-button.player-button--playpause.js-control-playpause-button');
+        return document.querySelector('.qa-pause-play-button');
     };
 
     Controls.prototype.fullScreenButton = function() {
-        return document.querySelector('.player-button.player-button--fullscreen.js-control-fullscreen');
+        return document.querySelector('.qa-fullscreen-button');
     };
 
     Controls.prototype.theatreModeButton = function() {
-        return document.querySelector('.player-button.player-button--theatre.js-control-theatre');
+        return document.querySelector('.qa-theatre-mode-button');
     };
 
     Controls.prototype.volumeButton = function() {
